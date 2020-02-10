@@ -30,7 +30,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 $(call inherit-product, device/xiaomi/lavender/device.mk)
 
 # Inherit some common Yodita stuff.
-$(call inherit-product, vendor/yodita/config/common.mk)
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_GAPPS_ARCH := arm64
+
+#Build Official
+export CHERISH_BUILD_TYPE :=OFFICIAL
 
 # Build Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
@@ -41,7 +47,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := xiaomi/lavender/lavender:9/PKQ1.180904.001/V10.3.9.0.PFGMIXM:user/release-keys
 
 # Device identifier
-PRODUCT_NAME := yodita_lavender
+PRODUCT_NAME := cherish_lavender
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_PLATFORM := SDM660
 PRODUCT_DEVICE := lavender

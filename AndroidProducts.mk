@@ -23,9 +23,9 @@
 
 # inherit MI A2 lineage device config
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/yodita_lavender.mk
+    $(LOCAL_DIR)/cherish_lavender.mk
 
 COMMON_LUNCH_CHOICES := \
-    yodita_lavender-eng \
-    yodita_lavender-userdebug \
-    yodita_lavender-user
+    cherish_lavender-eng \
+    cherish_lavender-userdebug \
+    cherish_lavender-user
